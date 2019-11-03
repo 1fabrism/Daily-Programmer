@@ -3,9 +3,9 @@
 Takes an `std::vector` input and reverses its elements so that the original last element will now be the first. The algorithm works as follows:
 
  	1. Store an element in a temporary variable
-		2. Overwrite it with the opposite element (index mirrored about the midpoint of the array)
-		3. Overwrite the other element with the temporary variable
-		4. Repeat until the middle of the vector is reached
+	2. Overwrite it with the opposite element (index mirrored about the midpoint of the array)
+	3. Overwrite the other element with the temporary variable
+	4. Repeat until the middle of the vector is reached
 
 The vector is passed as a reference in an attempt to reduce overhead. However, during each swapping operation one of the two elements to be swapped is copied into a temporary object; this can be expensive depending on the type of the vector's elements.
 
